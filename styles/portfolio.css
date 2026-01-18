@@ -204,3 +204,65 @@ cursor: pointer;
     justify-content: center;
     gap: 16px;            
     margin-top: 32px;
+}
+
+/* Hero sec done    */
+
+/* Cards section start from here */ 
+
+.container_title {
+    padding: 100px 120px;
+    text-align: center;
+    background-color: #F9FAFB; /* Light background to make white cards pop */
+}
+.title_content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 58px;
+    color: #001931;
+    margin-bottom: 16px;
+  }
+
+.title_content p{
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #627382;
+  margin-bottom: 44px;
+}
+
+.cards {
+    display: inline-flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;    
+}
+
+.cards_item{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 1px solid #E4E7EB;
+    border-radius: 8px;
+    width: 322px;
+    height: 300px;
+    padding: 24px;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 1);
+
+}
+/* .cards {
+    display: flex; 
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+} */
