@@ -78,8 +78,7 @@
     max-width: 1600px;
     margin-top: 39px;
     background-repeat: no-repeat;
-    background-position: center;
-    /* background-size: cover; */
+    background-position: center;    
     height: 674px;
     display: flex;
     justify-content: center;
@@ -111,12 +110,8 @@
     height: 6px;
     background-color: #30B868;
     border-radius: 50%;
-    margin-left: 8px; /* Offset to center the rings within the badge */
-    
-    /* Box-shadows calculated for 12px and 16px outer diameters */
-    box-shadow: 
-       0 0 0 3px rgba(48, 184, 104, 0.3), /* Middle Ring (30% opacity) */
-        0 0 0 5px rgba(48, 184, 104, 0.1); /* Outer Ring (10% opacity) */
+    margin-left: 8px;    
+    box-shadow: 0 0 0 3px rgba(48, 184, 104, 0.3), 0 0 0 5px rgba(48, 184, 104, 0.1); 
 }
 .banner h1{
 font-style: Bold;
@@ -213,7 +208,7 @@ cursor: pointer;
 .container_title {
     padding: 100px 120px;
     text-align: center;
-    background-color: #F9FAFB; /* Light background to make white cards pop */
+    background-color: #F9FAFB;
 }
 .title_content h2 {
     font-size: 48px;
@@ -234,56 +229,55 @@ cursor: pointer;
   margin-bottom: 44px;
 }
 
-.cards {
-    display: flex; 
+.cards-row {
+    display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: stretch; /* Makes all cards the same height */
     gap: 24px;
-    width: 100%;
     max-width: 1360px;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
-.cards_item{
-    display:flex;
-    flex-direction: column;
-    background-color: #FFFFFF;
+/* Individual Card Item */
+.cards_item {
+    flex: 1; /* Forces cards to share width equally */
+    background: #FFFFFF;
     border: 1px solid #E4E7EB;
-    border-radius: 8px;
-    width: 322px;
-    height: 300px;
-    padding: 40px 24px;
+    border-radius: 12px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
-    background: rgba(255, 255, 255, 1);
-
 }
-.icon_wrapper{
-    width: 60px;
-    height: 60px;
-    background-color: #FF5E5E; 
-    border-radius: 50%;         
-    display: flex;             
+
+/* The Red Circle (Ellipse) */
+.icon_wrapper {
+    width: 64px;
+    height: 64px;
+    background-color: #FF5E5E;
+    border-radius: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 24px; */
-    
+    margin-bottom: 24px;
+}
+.icon_wrapper img {
+    width: 28px;               
+    height: auto;
+    display: block;
 }
 
-.cards_item h3{
-    font-style: Semi Bold;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29px;
-    letter-spacing: 0%;
-    text-align: center;
-    text-transform: capitalize;
+/* 5. Card Content Spacing */
+.card_content h3 {
+    /* font-size: 20px; */
     color: #001931;
+    margin-bottom: 12px;
+    text-transform: capitalize;
 }
-/* .cards {
-    display: flex; 
-    justify-content: center;
-    gap: 24px;
-    margin-top: 20px;
-} */
+
+.card_content p {
+    font-size: 16px;
+    color: #627382;
+    line-height: 20px;
+}
