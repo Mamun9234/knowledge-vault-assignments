@@ -362,24 +362,26 @@ cursor: pointer;
 /* feature sec don */
 
 /* CTR sec start from here */
-
 .ctr_sec{
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.ctr_sec .ctr_sec_container{
   width: 1360px;
   height: 384px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 24;
+  align-items: center;  
   background-color: #F7F6F2;
-  margin-top: 120px;
-  padding: 80px 40px
-  
+  margin: 2px 120px 120px 120px;
+    
 }
 
 .ctr_sec .ctr_sec_content{
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .ctr_sec_content h2{
@@ -388,17 +390,44 @@ cursor: pointer;
   font-weight: 700;
   line-height: 48px;
   letter-spacing: 0%;
-  text-align: center;
+  /* text-align: center; */
   text-transform: capitalize;
   margin-top: 80px;
   margin-bottom: 16px;
 }
 
-. ctr_sec_content .des_1{
+.des_1{
+  max-width: 580px;
   font-style: Regular;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0%;
   text-align: center;
+  color: #627382;
+  margin-bottom: 24px;
+}
+
+.ctr_sec_content button{
+  width: 194px;
+  height: 52px;
+  display: flex;
+  border: none;
+  border-radius: 4px;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 10;
+  padding: 12px 16px 12px 16px;
+  background-color: #30B868;
+  font-style: Semi Bold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+  color: white;
+  cursor: pointer;
+  align-items: center;
 }
