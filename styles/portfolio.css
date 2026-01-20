@@ -365,23 +365,28 @@ cursor: pointer;
 .ctr_sec{
   width: 100%;
   max-width: 1600px;
-  margin: 0 auto;
-  border: 1px solid red;
+  margin: 0 auto;  
 }
 
-.ctr_sec .ctr_sec_container{
-  width: 1360px;
-  height: 384px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-  background-color: #F7F6F2;
-  margin: 2px 120px 120px 120px;
-    
+.ctr_sec .ctr_sec_container {
+    width: 100%;
+    max-width: 1360px;
+    height: 384px;
+    background-color: #F7F6F2;
+    margin: 120px auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    border-radius: 12px;
 }
 
-.ctr_sec .ctr_sec_content{
-  text-align: center;
+
+ .ctr_sec_content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
 }
 
 .ctr_sec_content h2{
@@ -389,8 +394,7 @@ cursor: pointer;
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
-  letter-spacing: 0%;
-  /* text-align: center; */
+  letter-spacing: 0%;  
   text-transform: capitalize;
   margin-top: 80px;
   margin-bottom: 16px;
@@ -408,26 +412,32 @@ cursor: pointer;
   margin-bottom: 24px;
 }
 
-.ctr_sec_content button{
-  width: 194px;
-  height: 52px;
-  display: flex;
-  border: none;
-  border-radius: 4px;
-  flex-direction: row;
-  justify-content: center;
-  /* align-items: center; */
-  gap: 10;
-  padding: 12px 16px 12px 16px;
-  background-color: #30B868;
-  font-style: Semi Bold;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 19px;
-  letter-spacing: 0%;
-  text-align: left;
-  text-transform: capitalize;
-  color: white;
-  cursor: pointer;
-  align-items: center;
+.ctr_sec_content button {
+    width: 194px;
+    height: 52px;
+    display: flex;
+    background-color: #30B868;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-style: semi bold;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: left;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    padding: 16.5px;
+    cursor: pointer;
+    margin: 0 auto 16px auto; 
 }
+
+.ctr_sec_content button img{
+    width: 20px;             
+    height: auto;
+    display: block;
+    margin-left: 10px;;
+}
+
+/* cta sec end here */
+
